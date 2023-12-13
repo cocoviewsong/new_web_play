@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <input type="text" id="keyword">
+        <button id="search-button">搜索</button>
+    </div>
+    <!-- 搜索列表 -->
+    <div class="search-list">
+        <ul id="result-list">
+            
+        </ul>
+    </div>
+    <!-- 歌词容器 -->
+    <div class="lrc-all-warp">
+        <ul id="lrc-warp">
+ 
+        </ul>
+    </div>
+    <!-- 音频 -->
+    <audio src="" id="audio" controls></audio>
+    <script src="另一个.js"></script>
+
+<script>
+var user = [
+ 	{
+         id: 1,
+         name: "李四"
+     },
+     {
+         id: 2,
+         name: "张三"
+     },
+     {
+         id: 3,
+         name: "李五",
+         name:"a啊"
+     }
+ ]
+var userName = Array.from(user,({name})=>name);
+document.getElementById("lrc-warp").append(userName);
+</script>
+
+</body>
+</html>

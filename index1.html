@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>测试代码</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link href="css/docs.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <!-- 创建一个容器 -->
+    <div class="row">
+        <!-- 创建一行 -->
+    <div class="col-4 p-3 bg-dark text-white column-gap-3">
+       <p class="text-justify">我wwwwwwwwwww</p></div>
+    <div class="col-4 p-3 bg-dark text-white column-gap-3">我wwwwwwwwwww</div>
+        <div class="col-4 p-3 bg-dark text-white column-gap-3">我wwwwwwwwwww</div>
+
+<!-- 创建三个等宽列 -->
+    </div>
+</div>
+
+<!-- 必须引入docs才能用 -->
+<div class="p-3 m-0 border-0 bd-example bd-example-cssgrid">
+  <div class="grid gap-3">
+    <div class="p-2 g-col-6">Grid item 1</div>
+    <div class="p-2 g-col-6">Grid item 2</div>
+    <div class="p-2 g-col-6">Grid item 3</div>
+    <div class="p-2 g-col-6">Grid item 4</div>
+  </div>
+</div>
+
+<!-- 暂时用这种方法分裂 -->
+<div class="container mt-3">
+    <div class="row">
+      <div class="col-8 bg-warning p-4 text-center">
+        推荐歌单
+          
+        <div class="row">
+          <div class="col-6 bg-light p-2">.col-6</div>
+          <div class="col-6 bg-secondary p-2">.col-6</div>
+        </div>
+      </div>
+        
+      <div class="col-4 bg-success p-4">.col-4
+        <h1>啊对对对</h1>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 列表的官方写法-->
+    <div class="container mt-3">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider"> 
+        <!-- table-group-divider：一条粗横线 -->
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <!-- colspan 控制占几格 -->
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <center>你能居中？</center>
+  <div class="aaa">
+  <dl>
+    <dt>购物指南</dt>
+    <dd>
+      <a href="#">购物流程</a>
+      <a href="#">会员介绍</a>
+      <a href="#">生活旅行/团购</a>
+      <a href="#">常见问题</a>
+      <a href="#">大家电</a>
+      <a href="#">联系客服</a>
+    </dd>
+  </dl>
+</div>
+
+  <dl>
+    <dt>配送方式</dt>
+    <dd>
+      <a href="#">上门自提</a>
+      <a href="#">211限时达</a>
+      <a href="#">配送服务查询</a>
+      <a href="#">配送费收取标准</a>
+      <a href="#">海外配送</a>
+    </dd>
+  </dl>
+
+ <style>
+  .aaa {
+    display: flex;
+  }
+ </style>
+
+<div>
+  <label for="userId">User ID</label>
+  <input type="button" id="userId" name="userId"  />
+  <input type="file">
+</div>
+
+<input type="image" id="image" alt="Login" src="/img/1.jpg" width="32px" />
+<div>
+  <input id="example" type="text" name="text" />
+  <input type="submit" value="搜索">
+</div>
+
+<!-- size表示框的展示数量 textarea多行文本输入框-->
+<select size="3">
+  <option value="">w</option>
+  <option value="">w</option>
+</select>
+
+<form>
+  <textarea name="txtInfo" rows="4" cols="12">1、不爱摄影不懂设计的程序猿不是一个好的产品经理。</textarea>
+</form>
+
+<form action="">
+<fieldset>
+  <legend>这是什么标签</legend>
+  啊对对对<input type="password" value="啊对对对">
+</fieldset>
+</form>
+
+<div>
+  
+<!-- 数据列表 -->
+<input type="text" list="myData">
+<datalist id="myData">
+    <option>
+      本科
+    </option>
+    <option>研究生</option>
+    <option>不明</option>
+</datalist>
+</div>
+
+
+<!-- ? 不刷新页面进行切换？-->
+<div class="tabs">
+  <nav>
+      <a href="javascript:;" data-cont="local">国内新闻</a>
+      <a href="javascript:;" data-cont="global">国际新闻</a>
+      <a href="javascript:;" data-cont="sports">体育新闻</a>
+      <a href="javascript:;" data-cont="funny">娱乐新闻</a>
+  </nav>
+  <section class="cont" id="local">
+      <ol>
+          <li>国内新闻1</li>
+          <li>国内新闻2</li>
+          <li>国内新闻3</li>
+          <li>国内新闻4</li>
+          <li>国内新闻5</li>
+          <li>国内新闻6</li>
+          <li>国内新闻7</li>
+      </ol>
+  </section>
+  <section class="cont" id="global">
+      <ol>
+          <li>国内新闻1</li>
+          <li>国际新闻2</li>
+          <li>国际新闻3</li>
+          <li>国际新闻4</li>
+          <li>国际新闻5</li>
+          <li>国际新闻6</li>
+          <li>国际新闻7</li>
+      </ol>
+  </section>
+  <section class="cont" id="sports">
+      <ol>
+          <li>体育新闻1</li>
+          <li>体育新闻2</li>
+          <li>体育新闻3</li>
+          <li>体育新闻4</li>
+          <li>体育新闻5</li>
+          <li>体育新闻6</li>
+          <li>体育新闻7</li>
+      </ol>
+  </section>
+  <section class="cont" id="funny">
+      <ol>
+          <li>娱乐新闻1</li>
+          <li>娱乐新闻2</li>
+          <li>娱乐新闻3</li>
+          <li>娱乐新闻4</li>
+          <li>娱乐新闻5</li>
+          <li>娱乐新闻6</li>
+          <li>娱乐新闻7</li>
+      </ol>
+  </section>
+</div>
+<script>
+  // 目标： 默认显示一个 当前的样式
+  // 点击导航，实现切换
+  // key 表示的当前显示的是第几个
+
+  (function (key) {
+      // 获取所有的导航
+      var navs = document.querySelectorAll('nav a');
+      // 遍历 给导航 绑定事件，并且添加当前样式
+      for (var i = 0; i < navs.length; i++) {
+          // 如果是用户指定的当前样式
+          if (key == i) {
+              navs[i].classList.add('active');
+              // 拿到要显示内容section的id
+              var secId = navs[i].dataset['cont'];
+              // 获取对应的section标签
+              document.querySelector('#' + secId).style.display = 'block';
+          }
+
+          // 给每一个导航绑定点击事件
+          navs[i].onclick = function () {
+              // 排他
+              // 之前有active样式的清除, 之前显示的section 隐藏
+              var currentNav = document.querySelector('.active');
+              // 获取对应的内容区域 ，让其隐藏
+              var currentId = currentNav.dataset['cont'];
+              // 去掉导航的active 样式
+              currentNav.classList.remove('active');
+              // 对应的内容区域
+              document.querySelector('#' + currentId).style.display = 'none';
+
+              // 突出显示自己 导航添加样式  对应的section 显示
+              // 给自己添加active样式
+              this.classList.add('active');
+              // 对应的section模块显示出来
+              var myId = this.dataset['cont'];
+              document.querySelector('#' + myId).style.display = 'block';
+          }
+      }
+
+  })(0);
+</script>
+
+<p class="fd"></p>
+
+<style type="text/css" class="container">
+  .nav{
+    /* width height 是内容宽高 */
+    width: 930px;
+    height: 50px;
+    /* 这是盒子边框 */
+    border: 1px solid red;
+    /* padding 是距离盒子边框的距离 */
+
+    /* 是盒子距离其他元素的距离 */
+    margin: 100px auto;
+  }
+  .nav ul{
+    /*去掉小圆点*/
+    list-style: none;
+  }
+  .nav ul li{
+    float: left;
+    width: 120px;
+    height: 50px;
+    /*让内容水平居中*/
+    text-align: center;
+    /*让行高等于nav的高度，就可以保证内容垂直居中*/
+    line-height: 50px;
+  }
+  .nav ul li a{
+    display: block;
+    width: 120px;
+    height: 50px;
+  }
+  /*两个伪类的属性，可以用逗号隔开*/
+  .nav ul li a:link , .nav ul li a:visited{
+    text-decoration: none;
+    background-color: black;
+    color:white;
+  }
+  .nav ul li a:hover{
+    background-color: orange;
+  }
+</style>
+
+
+<div class="nav">
+  <ul>
+    <li><a href="#">网站栏目</a></li>
+    <li><a href="#">网站栏目</a></li>
+    <li><a href="#">网站栏目</a></li>
+    <li><a href="#">网站栏目</a></li>
+    <li><a href="#">网站栏目</a></li>
+    <li><a href="#">网站栏目</a></li>
+    <li><a href="#">网站栏目</a></li>
+    <li><a href="#">网站栏目</a></li>
+  </ul>
+</div>
+
+<style>
+  /* #hezi1 #hezi2 #hezi3{
+    color: red;
+  } */
+
+  div .box div {
+    color: red;
+  }
+
+</style>
+<div class="box" id="hezi1">
+<div class="box" id="hezi2">
+<div class="box" id="hezi3">
+  <p>猜猜我是什么颜色</p>
+</div>
+</div>
+</div>
+
+<style>
+.div1{
+	width: 0;
+	height: 0;
+	border-top: 30px solid red;
+	/* 通过改变 border-left 和 border-right 中的像素值，来改变三角形的形状 */
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+}
+</style>
+<div class="div1"></div>
+
+<span class="ad">啊对对对啊</span><span class="ad1">啊对对对啊</span>
+<style>
+  .ad, .ad1{
+    border: 1px solid red;
+    height: 30px;
+    width: 30px;
+    margin-right: 30px;
+  }
+</style>
+
+<div class="fudongdiv">
+  <ul class="fudong1">
+    <li class="aaap">啊对对对 </li>
+    <li class="aaap">啊对对对</li>
+  </ul>
+</div>
+  <div class="fudongdiv">
+  <ul class="fudong2" id="fudongul">
+    <li class="aaap">啊对对对1</li>
+    <li class="aaap">啊对对对1</li>
+  </ul>
+</div>
+
+<style>
+  .fudongdiv , .fudongdiv{
+    width: 130px;
+    height: 60px;
+  }
+  /* .fudong2 ,  .aaap{
+    float: left;
+    width: 130px;
+    height: 30px;
+    border: 1px solid red;
+  } */
+  .fudong1,.fudong2{
+    width: 130px;
+    height: 30px;
+    border: 1px solid red;
+  }
+</style>
+
+<!-- 伪元素选择 -->
+<style>
+.smguiwanyi::selection{
+  color: skyblue;
+  /* background-color: red; */
+}
+.smguiwanyi{
+  text-shadow: -10px -10px 10px red ;
+}
+
+</style>
+
+<ul class="smguiwanyi">
+  <li class="smguiwanyi">
+    啊对对对
+  </li>
+  <li class="smguiwanyi">
+    啊对对对
+  </li>
+</ul>
+</body>
+</html>

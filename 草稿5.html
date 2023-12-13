@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/APlayer.min.css">
+    <script src="/js/APlayer.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- vue框架调用 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<body>  
+<div id="aplayer"></div>
+<script>
+    const ap = new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: true,                //是否附着页面底部，否为false
+        autoplay: false,             //是否自动播放，否为false,移动端不能生效
+        volume: 0.6,                //初始音量（0~1）
+        lrcType: 3,                 //歌词模式（1、HTML模式 2、js模式 3、lrc文件模式）
+        mutex: true,                //互斥模式：阻止多个播放器同时播放，当前播放器播放时暂停其他播放器
+        order: 'list',            //音频循环顺序（'list'：顺序, 'random'：随机）
+        preload: 'auto',            //预加载（'none'：不预加载, 'metadata'：元数据, 'auto'：自动）
+        listFolded: false,          //列表默认折叠，开启为true
+        theme: '#ee8243',           //主题颜色
+        audio: [{
+            name: 'Dacapo',           //歌曲名称，这里得做个读取函数
+            artist: 'v',       //歌曲作者，这里得做个读取函数
+            url: '/music/Da Capo.flac',         //歌曲源文件地址
+            cover: '/img/2.png',     //歌曲封面地址
+            lrc:  'singtxt/Da Capo - HOYO-MiX.lrc',        //歌曲的歌词文件
+            theme: '#eeeeee'        //主题颜色（优先）
+        }]
+    });
+</script>
+
+<!--这是ALT+h即可跳转  -->
+<a href="http://www.runoob.com/html/html-tutorial.html" accesskey="h">测试文字</a>
+
+<!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="/img/1.jpg" alt="First slide" width="320px">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/img/1.jpg" alt="First slide" width="320px">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/img/1.jpg" alt="First slide" width="320px">
+      </div>
+    </div>
+  </div> -->
+  
+<!-- 这是歌单 -->
+<div class="container mt-3">
+  <h1 class="text-center"> 歌单</h1>
+  <div class="row">
+    <div class="col-sm-4">
+<img class="container" src="img/2.png" />
+<p class="text-center">啊 对对对</p>
+    </div>
+    <div class="col-sm-4">
+      <img class="container" src="img/2.png" />
+      <p class="text-center">啊 对对对</p>
+    </div>
+    <div class="col-sm-4">
+      <img class="container" src="img/2.png" />
+      <p class="text-center">啊 对对对</p>
+</body>
+</html>
